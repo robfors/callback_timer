@@ -1,8 +1,6 @@
 require 'callback_timer'
 
 
-require 'pry'
-
 RSpec.describe CallbackTimer do
   
   describe "::new" do
@@ -42,8 +40,6 @@ RSpec.describe CallbackTimer do
     
     context "when creating three new CallbackTimers with different 'duration's" do
       it "should all call the callback at correct times" do
-        #binding.pry
-        $tt = 0
         $test = []
         start_time = Time.now
         durations = [1, 0.5, 2]
